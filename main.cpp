@@ -21,3 +21,10 @@ int main()
   // Imprime el total cargado: 17330
   cout << nuevaEmpresa.cargarLosCamiones(objetos) << endl;
   vector <Camion> aux = nuevaEmpresa.getFlotaDeCamiones();
+  cout << "Cargas por camion" << endl;
+  cout << nuevaEmpresa.cargaDeCamion("YUI-988") << endl;
+  cout << nuevaEmpresa.cargaDeCamion("OIJ-807") << endl;
+  cout << nuevaEmpresa.cargaDeCamion("KHO-193") << endl;
+  
+  return 0;
+}
