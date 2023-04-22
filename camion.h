@@ -33,15 +33,6 @@ class Camion
   int cualEsLaCapacidadMaxima();
   int cualEsElPesoTotalCargado();
 
-  /**
-   Mover los objetos que se puedan a otro camión. Debe quitar
-   los elementos del vector de objetos y actualizar la variable pesoTotalCargado
-  */
-  void descargarACamion(Camion &Cv, Camion &Cn);
-  //descarga un objeto especificado
-  void descargarUnObjeto(int objeto);
-//recordar actualizar el peso total cargado
-
 //devuelve los objetos cargados
   vector <int> getObjetos();
 
