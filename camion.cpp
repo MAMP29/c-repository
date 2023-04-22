@@ -53,3 +53,13 @@ void Camion::descargarUnObjeto(int objetoElim)
     }
   }
 }
+void Camion::descargarACamion(Camion Cv, Camion Cn){
+  for(int& elemento : Cv.getObjetos()){
+    bool cargado = Cn.cargarUnObjeto(elemento);
+    if (cargado == true){
+    auto it = find(Cv.getObjetos().begin(), Cv.getObjetos().end(), elemento); //funcion para encontrar el objeto determinado, auto es para detectar x
+      if (it != Cv.getObjetos().end()){
+        Cv.getObjetos().erase(it);
+      }
+    }
+  }
